@@ -348,6 +348,11 @@ input, select, textarea {
 		border-bottom-color: rgba(0, 0, 0, 0.2);
 	}
 
+	.gitimage {
+		display:flex;
+		align-items: center;
+		margin-right: 100px;
+	}
 /* Row */
 
 	.row {
