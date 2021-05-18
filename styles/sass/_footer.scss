@@ -1,0 +1,29 @@
+footer {
+    background-color: $grey3;
+    margin: 0 0 0 8.5rem;
+}
+
+.footerTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        color: #ffffff;
+        font-family: $patrickSC;
+        font-size: 20px;
+        margin: 0;
+    }
+    p.credit {
+        color: #ffffff;
+        font-size: 14px;
+        a {
+            color:  #ffffff;
+        }
+    }
+    p.mycredit {
+        padding-top: 0.5rem;
+    }
+    p.containerCredit {
+        padding-bottom: 0.5rem;
+    }
+}

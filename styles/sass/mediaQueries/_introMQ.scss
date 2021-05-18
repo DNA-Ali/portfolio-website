@@ -1,0 +1,153 @@
+@media (max-width: 1875px) {
+    .aboutMe {
+        justify-content: center;
+    }
+    //resizing the containers for the texts so the picture doesn't get squished
+    .photo {
+        margin-right: 0.5rem;
+    }
+    //text margins
+}
+
+@media (max-width: 1660px) {
+    .aboutMe {
+        justify-content: center;
+    }
+    //resizing the containers for the texts so the picture doesn't get squished
+    .photo {
+        margin-right: 2rem;
+        width: 300px;
+        height: 300px;
+        //box-shadow: 15px 15px $pink1;
+    }
+    .aboutMeTexts {
+        margin-left: 0;
+    }
+    p.answers {
+    width: 600px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    //changing the flex direction of textbox and the picture to column reverse so the picture goes on top
+    .aboutMe {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    //adjusting the picture sizes
+    .photo {
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        //box-shadow: -25px -25px $pink1;
+    }
+    //getting rid of margin on text container so they come to the center
+    .aboutMeTexts {
+        margin: 0 auto;
+    }
+    h3 {
+        margin: 3rem auto 1rem auto;
+    }
+    h4.questions {
+        margin: 2rem 0 0.3rem 2rem;
+    }
+    p.answers:first-of-type {
+        margin: 1rem auto 1rem auto;
+    }
+    p.answers {
+        width: auto;
+        margin: 0 2rem 1rem 3rem;
+    }
+    // resume and linkedin button to the center
+    .resumeButtonsGroup {
+        margin: 3rem auto 2rem auto;
+    }
+}
+
+@media (max-width: 715px) {
+    //adjusting the picture sizes
+    .photo {
+        width: 300px;
+        height: 300px;
+        //box-shadow: -15px -15px $pink1;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    p.answers:first-of-type {
+        margin: 1.4rem 4rem 1rem 4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .resumeButtonsGroup {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    a.resumeButton {
+        text-align: center;
+        font-size: 20px;
+        padding: 2rem 2rem;
+        margin-right: 0;
+        margin-top: 1.8rem;
+    }
+    p.answers {
+        width: auto;
+        margin: 0 0.5rem 1rem 1rem;
+        line-height: 35px;
+    }
+    p.answers:first-of-type {
+        margin: 1.4rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .resumeButtonsGroup {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 50px;
+        margin: 1rem auto 1rem auto;
+    }
+    p.answers:first-of-type {
+        margin: 0.4rem 1rem 1rem 1rem;
+    }
+    p.answers {
+        line-height: 30px;
+    }
+    a.resumeButton {
+        font-size: 16px;
+        padding: 1.5rem 1.5rem;
+        margin-right: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h3 {
+        font-size: 40px;
+        margin: 1rem auto 1rem auto;
+    }
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+    //getting rid of margin on text container so they come to the center
+    .aboutMeTexts {
+        margin: 0 auto;
+    }
+    h4.questions {
+        margin: 2rem 0 0.3rem 0.3rem;
+    }
+    // resume and linkedin button to the center
+    .resumeButtonsGroup {
+        margin: 3rem auto 2rem auto;
+    }
+}

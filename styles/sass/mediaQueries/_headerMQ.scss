@@ -1,0 +1,48 @@
+//also a mobileheader MQ:
+
+@media (max-width: 400px) {
+    .overheadNavLinks {
+        li {
+            margin-bottom: 1rem;
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+//max-HEIGHT for rotated mobile devices
+@media (max-height: 550px) {
+    .overheadNavLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        li {
+            margin-bottom: 1rem;
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    // get rid of sidebar and rearrange the site
+    aside.sidebar {
+        display: none;
+    }
+    //infoBubbles
+    .infoSection {
+        width: 30rem;
+    }
+    //projects
+    main {
+        margin: 0;
+    }
+
+
+    .burgerIconBox {
+        display: initial;
+    }
+}

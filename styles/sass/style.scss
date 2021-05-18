@@ -1,0 +1,23 @@
+@import "snippets";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "sidebar";
+@import "drawings";
+@import "introduction";
+@import "mobileHeader";
+@import "drawings";
+@import "skills";
+@import "projects";
+@import "form";
+@import "footer";
+
+//Media queries
+@import "mediaQueries/headerMQ";
+@import "mediaQueries/introMQ";
+@import "mediaQueries/skillsMQ";
+@import "mediaQueries/drawingMQ";
+@import "mediaQueries/projectsMQ";
+@import "mediaQueries/formMQ";
+@import "mediaQueries/mainMQ";
+@import "mediaQueries/footerMQ";

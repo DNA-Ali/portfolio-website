@@ -1,0 +1,189 @@
+// text color in this section are $darkGrey
+.skillesUsed p,
+h5 a,
+p.appDetails,
+a.codeLink {
+    color: $darkGrey;
+}
+.projects {
+    margin: 0 auto 10rem auto;
+    width: 80%;
+}
+section.projectSection {
+    display: flex;
+    margin-top: 3rem;
+    height: 500px;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    a.thumbnail {
+        width: 50%;
+        background-color: $yellow1;
+        z-index: -10;
+        overflow: hidden;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
+        display: inline-block;
+    }
+    .thumbnail:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .thumbnail:active {
+        -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(60%);
+    }
+    .projectDescription {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #ffffff;
+        z-index: 10;
+    }
+}
+
+.project1 .thumbnail {
+    background-image: url(/assets/aliport.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project2 .thumbnail {
+    background-image: url(/assets/shopali.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project3 .thumbnail {
+    background-image: url(/assets/nasa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project4 .thumbnail {
+    background-image: url(/assets/spellchecker.png);
+    background-size: cover;
+    background-position: center;
+}
+.project5 .thumbnail {
+    background-image: url(/assets/insta.png);
+    background-size: cover;
+    background-position: center;
+}
+.project6 .thumbnail {
+    background-image: url(/assets/caeser.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.project7 .thumbnail {
+    background-image: url(/assets/store.png);
+    background-size: cover;
+    background-position: center;
+}
+.project8 .thumbnail {
+    background-image: url(/assets/gibli.png);
+    background-size: cover;
+    background-position: center;
+}
+
+// side margins for description section and skills used
+.skillsUsed,
+.projectDescription h5,
+.developedWith,
+.appDetails,
+.codeLink {
+    margin: 0 2rem;
+}
+
+.skillsUsed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    p {
+        color: $darkGrey;
+        padding: 10px 10px;
+        background-color: $yellow1;
+        font-size: 12px;
+        margin-right: 15px;
+        margin-top: 0;
+    }
+}
+.projectDescription {
+    font-family: $montserrat1;
+    h5 {
+       a {
+            text-decoration: none;
+            font-size: 50px;
+            line-height: 40px;
+            font-family: $patrickSC;
+            font-weight: 500;
+        }
+    }
+}
+h5:hover {
+    a {
+        color: $blue3;
+        text-decoration: underline;
+        animation: blinkingh5 2s infinite;
+    }
+    @keyframes blinkingh5{
+        0% {color: #3a99aa}
+        20% {color: #75d0e2}
+        100% {color: #3a99aa}
+    }
+}
+
+a.codeLink {
+    font-family: $montserrat1;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0.5rem 0.8rem;
+    //button styling, gradients and round borders
+    background-color: $grey3;
+    // border: 1px solid $orange1;
+    // border-radius: 4px 15px 4px 10px;
+    //hover transition time
+    transition: all ease 0.2s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    i {
+        color: #ffffff;
+    }
+}
+a.codeLink:hover {
+    box-shadow: inset 13em 0 0 0.01px $grey2;
+    color: #000000;
+    i {
+        color: #000000;
+    }
+}
+a.codeLink:active {
+    // move anchor button down when clicked
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+
+p.developedWith {
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+p.appDetails {
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: 4rem;
+}
+.developedWith a {
+    color: $blue1;
+    transition: 0.1s;
+}
+.developedWith a:hover {
+    background-color: $grey3;
+    color: #ffffff;
+    text-decoration: none;
+}

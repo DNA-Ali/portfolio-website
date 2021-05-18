@@ -1,0 +1,134 @@
+@media (max-width: 1400px) {
+    // container + img sizes
+    .blinkContainer {width: 30rem;}
+    img.me {width: 25rem;}
+    div.firstIntroTextContainer {width: 30rem;}
+
+    // Text styling
+    #typed {font-size: 80px; line-height: 65px;}
+    .typed-cursor {font-size: 80px;}
+    p.partTwo {font-size: 35px; line-height: 35px;}
+    p.partThree {font-size: 28px;}
+}
+
+
+@media (max-width: 1200px) {
+    main {
+        // sidebar margin needs to go
+        margin-left: 0;
+    }
+    .landingWrapper {
+        height: auto;
+    }
+    .drawing {
+        margin-left: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .drawingGroup {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .desktopDisplay,
+    .desktopDisplay.fa-caret-up:before {
+        display: none;
+    }
+    .mobileDisplay,
+    .mobileDisplay.fa-caret-down:before {
+        display: initial;
+    }
+    // container + img sizes
+    .blinkContainer {
+        display: none;
+    }
+    .noFlexContainer {margin-top: 2rem;}
+    //disable anchor on gif
+    img.me {width: 35rem; margin: 0;}
+    div.firstIntroTextContainer {width: auto; margin-top: 3rem;}
+
+    // Text styling
+    #typed {font-size: 120px; line-height: 100px;}
+    .typed-cursor {font-size: 100px;}
+    p.partTwo {font-size: 55px; line-height: 65px;}
+    p.partThree {font-size: 26px; margin-bottom: 7rem;}
+    p.clickDirection {
+        width: auto;
+        font-size: 34px;
+        color: $grey3;
+        margin-bottom: 10rem;
+    }
+    p.tapDirection {
+        width: auto;
+        font-size: 24px;
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    p.clickDirection {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 700px) {
+     // container + img sizes
+    //disable anchor on gif
+    img.me {width: 25rem;}
+
+    // Text styling
+    #typed {font-size: 90px; line-height: 80px;}
+    .typed-cursor {font-size: 70px;}
+    p.partTwo {font-size: 35px; line-height: 45px;}
+    p.partThree {font-size: 22px;}
+    p.clickDirection {
+        font-size: 30px;
+        color: $grey3;
+    }
+    p.tapDirection {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 499px) {
+    // container + img sizes
+    //disable anchor on gif
+    img.me {width: 20rem;}
+
+    // Text styling
+    #typed {font-size: 60px; line-height: 60px;}
+    .typed-cursor {font-size: 60px;}
+    p.partTwo {font-size: 30px; line-height: 40px;}
+    p.partThree {font-size: 18px;}
+    p.clickDirection {
+        font-size: 30px;
+        color: $grey3;
+    }
+    p.tapDirection {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    // container + img sizes
+    //disable anchor on gif
+    img.me {width: 15rem;}
+
+    // Text styling
+    #typed {font-size: 40px; line-height: 40px;}
+    .typed-cursor {font-size: 30px;}
+    p.partTwo {font-size: 20px; line-height: 30px;}
+    p.partThree {font-size: 15px;}
+    p.clickDirection {
+        font-size: 20px;
+        color: $grey3;
+    }
+    p.tapDirection {
+        font-size: 15px;
+    }
+}

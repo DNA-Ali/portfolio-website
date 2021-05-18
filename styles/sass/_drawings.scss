@@ -1,0 +1,111 @@
+.drawing {
+    width: 100%;
+    height: 100vh;
+    margin-left: 5rem;
+}
+//blinkContainer + textContainer
+.drawingGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+// blinking gif + click direction container
+.blinkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+}
+
+////// blinking gif styling
+img.me {
+    width: 30rem;
+    border: 6px solid $grey3;
+    background-color: $blue2;
+    border-radius: 0%;
+    margin-top: 4rem;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s ease;
+}
+img.me:hover {
+    background-color: $orange1;
+    border: 6px solid $pink2;
+}
+
+///////////// text container
+div.firstIntroTextContainer {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Text stylings:
+// fontawesome arrow
+i.fa-caret-up,
+i.fa-caret-down {
+    --animate-delay: 2s;
+    color: $orange1;
+    font-size: 50px;
+}
+p.clickDirection,
+p.tapDirection {
+    width: 20rem;
+    font-family: $ntr;
+    font-size: 24px;
+    font-weight: 200;
+    color: $blue4;
+    text-align: center;
+    margin: 0;
+    --animate-delay: 2s;
+}
+p.clickDirection a {
+    color: $accentBlue;
+}
+//typed.js string styling
+.noFlexContainer {
+    text-align: center;
+}
+#typed {
+    font-family: $patrickSC;
+    font-size: 120px;
+    line-height: 85px;
+    text-align: center;
+    color: $grey3;
+}
+.typed-cursor {
+    font-size: 100px;
+    color: $grey3;
+}
+p.firstIntro,
+h1 {
+    margin: 0;
+    color: $blue4;
+    text-align: center;
+}
+p.partTwo {
+    font-family: $ntr;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 1.5rem 0;
+}
+p.partThree {
+    font-family: $ntr;
+    font-weight: 0;
+    font-size: 28px;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+
+// Click directions for mobile hidden until 1200px
+.mobileDisplay {
+    display: none;
+}
+.mobileDisplay.fa-caret-down:before {
+    display: none;
+}

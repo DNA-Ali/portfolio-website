@@ -1,0 +1,105 @@
+.introduction {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.aboutMeTexts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+h3 {
+    font-family: $patrickSC;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 77px;
+    line-height: 40px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: $grey3;
+    span {
+        color: $pink1;
+    }
+}
+h4.questions {
+    font-family: $montserrat2;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2rem 5rem 0.3rem 2rem;
+    color: $grey3;
+}
+p.answers {
+    width: 800px;
+    font-family: $ntr;
+    font-size: 22px;
+    margin: 0 5rem 1rem 3.2rem;
+    line-height: 36px;
+    a {
+        color: $accentBlue;
+    }
+}
+p.answers:first-of-type {
+    margin: 1.4rem 0 1rem 4rem;
+    span.aboutMeSpanSmall {
+        color: $accentBlue;
+        font-weight: 600;
+    }
+}
+.photo {
+    width: 300px;
+    height: 300px;
+    background-image: url(/assets/profile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-right: 6rem;
+    box-shadow: 14px 14px $pink1;
+}
+
+
+.resumeButtonsGroup {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+a.resumeButton {
+    font-family: $montserrat1;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 1rem 1.3rem;
+    margin-right: 2rem;
+    //button styling, gradients and round borders
+    background-color: $grey3;
+    // border: 1px solid $orange1;
+    // border-radius: 4px 15px 4px 10px;
+    //hover transition time
+    transition: all ease 0.4s;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #ffffff;
+    i {
+        color: #ffffff;
+    }
+}
+a.resumeButton:hover {
+    box-shadow: inset 16em 0 0 0.01px $grey2;
+    // border: 1px solid $blue2;
+    color: #000000;
+    i {
+        color: #000000;
+    }
+}
+a.resumeButton:active {
+    // move anchor button down when clicked
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}
